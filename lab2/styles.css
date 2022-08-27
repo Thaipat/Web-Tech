@@ -1,0 +1,24 @@
+.aug,
+.oct {
+    color: hsla(16, 100%, 73%, 1);
+}
+
+table,
+th,
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 2em;
+    width: 125px;
+    height: 75px;
+}
+
+table {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+}
+body{
+    display: flex;
+}
