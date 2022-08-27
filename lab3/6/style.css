@@ -1,0 +1,218 @@
+*{
+    font-family: 'Oleo Script', cursive;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 0px 5px;
+}
+
+.table {
+    position: relative;
+    transform: translate(77%, 0%);
+    padding: 15% 19% 24% 15%;
+    width: 5%;
+}
+
+#box1 {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box1:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+
+#box2 {
+    position: absolute;
+    top: 1%;
+    left: 34.5%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box2:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+
+#box3 {
+    position: absolute;
+    top: 1%;
+    left: 68%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box3:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+
+#box4 {
+    position: absolute;
+    top: 34.5%;
+    left: 1%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box4:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+
+#box5 {
+    position: absolute;
+    top: 34.5%;
+    left: 34.5%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box5:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+
+#box6 {
+    position: absolute;
+    top: 34.5%;
+    left: 68%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box6:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+
+#box7 {
+    position: absolute;
+    top: 68%;
+    left: 1%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box7:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+
+#box8 {
+    position: absolute;
+    top: 68%;
+    left: 34.5%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box8:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+#box9 {
+    position: absolute;
+    top: 68%;
+    left: 68%;
+    padding: 0%;
+    font-size: 90px;
+    max-width: 31%;
+    width: 31%;
+    max-height: 31%;
+    height: 31%;
+    background-color: white;
+    transition: linear 0.1s;
+    color: #8a8a8a;
+}
+#box9:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+    border-color: black;
+}
+
+#reset{
+    position: absolute;
+    top: 89%;
+    left: 110%;
+    width: 20%;
+    height: 10%;
+    font-size: 180%;
+}
+
+#reset:hover{
+    cursor: pointer;
+}

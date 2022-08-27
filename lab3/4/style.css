@@ -1,0 +1,137 @@
+*{
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+}
+#Math{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec3421;
+    width: 20%;
+    margin: 10% 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#Math_hide{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec3421;
+    width: 80%;
+    margin: 10% 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#Thai{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5a323;
+    width: 20%;
+    margin: 10px 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#Thai_hide{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5a323;
+    width: 50%;
+    margin: 10px 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#English{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5ef23;
+    width: 20%;
+    margin: 10px 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#English_hide{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5ef23;
+    width: 70%;
+    margin: 10px 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#Science{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #5df523;
+    width: 20%;
+    margin: 10px 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#Science_hide{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #5df523;
+    width: 60%;
+    margin: 10px 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#Social{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c46f5;
+    width: 20%;
+    margin: 10px 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+#Social_hide{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c46f5;
+    width: 40%;
+    margin: 10px 0px 10px 10%;
+    padding: 10px;
+    transition: linear 0.5s;
+    border-radius: 10px;
+}
+button{
+    margin-left: 14.6%;
+    padding: 10px;
+    color: white;
+    background: #7b00ff;
+    border-radius: 5px;
+    border-width: 4px;
+    transition: linear 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    background: #6300cc;
+}

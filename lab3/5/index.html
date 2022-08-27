@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab3/5</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="row no-pad">
+        <div id="left">
+            <h1>Create your card</h1>
+            <label>Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your Full Name" id="FullName">
+            <label>Phone</label>
+            <input type="text" class="form-control" placeholder="Enter your Phone Number" id="PhoneNumber">
+            <label>E-mail</label>
+            <input type="text" class="form-control" placeholder="Enter your E-mail" id="Email">
+            <label>Company</label>
+            <input type="text" class="form-control" placeholder="Enter your company" id="Company">
+            <button type="button" onclick="validateForm()" class="btn btn-primary">Create</button>
+        </div>
+        <div id="right">
+            <div class="row_card">
+                <p id="card_head">Your card here</p>
+                <div class="container">
+                    <img
+                        src="card.png">
+                    <div class="top-left">
+                        <h5 id="UrFullName">Your full name</h5>
+                        <div><a id="UrPhoneNumber">Your phone number</a></div>
+                        <div><a id="UrEmail">Your E-mail</a></div>
+                        <div><a id="UrCompany">Your company</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
