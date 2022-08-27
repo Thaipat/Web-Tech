@@ -51,25 +51,25 @@ function check_win() {
         alert("Player '" + box1.innerHTML + "' WIN!!");
         reset();
     } else if(box2.innerHTML == box5.innerHTML && box5.innerHTML == box8.innerHTML && box2.innerHTML != "" && box5.innerHTML != "" && box8.innerHTML != ""){
-        alert("'" + box2.innerHTML + "' WIN!!");
+        alert("Player '" + box2.innerHTML + "' WIN!!");
         reset()
     } else if(box3.innerHTML == box6.innerHTML && box6.innerHTML == box9.innerHTML && box3.innerHTML != "" && box6.innerHTML != "" && box9.innerHTML != ""){
-        alert("'" + box3.innerHTML + "' WIN!!");
+        alert("Player '" + box3.innerHTML + "' WIN!!");
         reset();
     } else if(box1.innerHTML == box2.innerHTML && box2.innerHTML == box3.innerHTML && box1.innerHTML != "" && box2.innerHTML != "" && box3.innerHTML != ""){
         alert("Player '" + box1.innerHTML + "' WIN!!");
         reset();
     } else if(box4.innerHTML == box5.innerHTML && box5.innerHTML == box6.innerHTML && box4.innerHTML != "" && box5.innerHTML != "" && box6.innerHTML != ""){
-        alert("'" + box4.innerHTML + "' WIN!!");
+        alert("Player '" + box4.innerHTML + "' WIN!!");
         reset();
     } else if(box7.innerHTML == box8.innerHTML && box8.innerHTML == box9.innerHTML && box7.innerHTML != "" && box8.innerHTML != "" && box9.innerHTML != ""){
-        alert("'" + box7.innerHTML + "' WIN!!");
+        alert("Player '" + box7.innerHTML + "' WIN!!");
         reset();
     } else if(box1.innerHTML == box5.innerHTML && box5.innerHTML == box9.innerHTML && box1.innerHTML != "" && box5.innerHTML != "" && box9.innerHTML != ""){
         alert("Player '" + box1.innerHTML + "' WIN!!");
         reset();
     } else if(box3.innerHTML == box5.innerHTML && box5.innerHTML == box7.innerHTML && box3.innerHTML != "" && box5.innerHTML != "" && box7.innerHTML != ""){
-        alert("'" + box3.innerHTML + "' WIN!!");
+        alert("Player '" + box3.innerHTML + "' WIN!!");
         reset();
     } else if(box1.innerHTML != "" && box2.innerHTML != "" && box3.innerHTML != "" && box4.innerHTML != "" && box5.innerHTML != "" && box6.innerHTML != "" && box7.innerHTML != "" && box8.innerHTML != "" && box9.innerHTML != ""){
         alert("Game Drawn!!");
