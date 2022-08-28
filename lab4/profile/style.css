@@ -309,7 +309,6 @@ footer{
     align-items: center;
     padding: 1% 1%;
     background-color: rgb(66 48 39);
-    width: 100%;
+    width: 98%;
     left: 0;
-    overflow-x: hidden;
 }
