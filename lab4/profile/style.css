@@ -1,0 +1,315 @@
+* {
+    font-family: 'Itim', cursive;
+    padding: 0;
+    margin-top: 0;
+}
+
+body {
+    background-color: rgb(223 207 192);
+}
+
+/* ---- Home ---- */
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(104 64 39);
+    position: relative;
+}
+
+.text-box {
+    width: 10%;
+    color: rgb(236 211 191);
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 600%;
+}
+
+/* ---- Scrolling ---- */
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    background-color: rgba(68, 50, 40, 0.677);
+    min-width: 10%;
+    border-radius: 10px;
+    top: 0;
+    left: 65.3%;
+    padding: 0.5% 0.5% 0% 0.5%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+
+.nav-links ul li a {
+    color: rgb(236 211 191);
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.nav-links ul li a:hover {
+    cursor: pointer;
+}
+
+.nav-links ul li::after {
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: rgb(211 160 117);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+
+
+
+/* ---- Header ---- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 11vh;
+    background-color: rgb(66 48 39);
+    font-size: 200%;
+    color: rgb(206 195 181);
+    padding-top: 4vh;
+}
+
+/* ---- Profile ---- */
+
+.profile {
+    position: relative;
+    min-height: 85vh;
+    background-color: rgb(199 168 138);
+}
+
+.p_row {
+    display: flex;
+    min-height: 85vh;
+}
+
+.p_left {
+    flex: 15%;
+    background-color: rgb(73 104 99);
+}
+
+.p_left img {
+    position: absolute;
+    width: 20%;
+    top: 24%;
+    left: 8%;
+    border: 5px solid rgb(68 50 40);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.p_left img:hover {
+    cursor: pointer;
+    transform: scale(110%, 110%);
+}
+
+.p_right {
+    flex: 85%;
+    background-color: rgb(199 168 138);
+}
+
+.infomation {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+.social {
+    font-size: 150%;
+}
+
+.social a {
+    margin: 10px;
+    color: rgb(124 72 37);
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.social a:hover {
+    font-size: 160%;
+    color: rgb(79, 46, 24);
+}
+
+/* ---- Hobby ---- */
+
+.hobby {
+    position: relative;
+    min-height: 185vh;
+    background-color: rgb(199 168 138);
+}
+
+.h_row {
+    display: flex;
+    min-height: 185vh;
+}
+
+.h_left {
+    flex: 15%;
+    background-color: rgb(73 104 99);
+}
+
+.h_right {
+    flex: 85%;
+    background-color: rgb(199 168 138);
+}
+
+.sport{
+    position: absolute;
+    width: 30%;
+    top: 14%;
+    left: 2%;
+    border: 5px solid rgb(68 50 40);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.music{
+    position: absolute;
+    width: 30%;
+    top: 45%;
+    left: 2%;
+    border: 5px solid rgb(68 50 40);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.game{
+    position: absolute;
+    width: 30%;
+    top: 75%;
+    left: 2%;
+    border: 5px solid rgb(68 50 40);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.h_left img:hover{
+    cursor: pointer;
+    transform: scale(110%, 110%);
+}
+
+.text_sport{
+    position: absolute;
+    top: 24%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+.text_music{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+.text_game{
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+/* ---- Performance ---- */
+
+.performance {
+    position: relative;
+    min-height: 145vh;
+    background-color: rgb(199 168 138);
+}
+
+.pe_row {
+    display: flex;
+    min-height: 145vh;
+}
+
+.pe_left {
+    flex: 15%;
+    background-color: rgb(73 104 99);
+}
+
+.itcamp{
+    position: absolute;
+    width: 30%;
+    top: 21%;
+    left: 2%;
+    border: 5px solid rgb(68 50 40);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.itcamp:hover{
+    cursor: pointer;
+    transform: scale(110%, 110%);
+}
+
+.prepro{
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    left: 2%;
+    border: 5px solid rgb(68 50 40);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.prepro:hover{
+    cursor: pointer;
+    transform: scale(110%, 110%);
+}
+
+.pe_right {
+    flex: 85%;
+    background-color: rgb(199 168 138);
+}
+
+/* ---- Footer ---- */
+
+footer{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 1%;
+    background-color: rgb(66 48 39);
+    width: 100%;
+    left: 0;
+    overflow-x: hidden;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab4/profile</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ---- Home ----  -->
+    <section class="home">
+        <div class="text-box">
+            <h1>Portfolio</h1>
+        </div>
+    </section>
+    <!-- ---- Profile ----  -->
+    <section class="profile">
+        <div class="header">
+            <h1>โปรไฟล์</h1>
+        </div>
+        <div class="p_row">
+            <div class="p_left">
+                <img src="profile.jpg">
+            </div>
+            <div class="p_right">
+                <div class="infomation">
+                    <h2>นายไธพัตย์ ล้อธนวิจิตร</h2>
+                    <p>รหัสนักศึกษา: 64070166</p>
+                    <p>เพศ: ชาย | สถานะ: โสด</p>
+                    <p>คำคมบาดใจ: อยากมีคนใส่ใจ ที่ไม่ใช่ป้าข้างบ้าน</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/thaipat555/">
+                            <i class="fab fa-instagram">
+                            </i>
+                        </a>
+                        <a href="https://www.facebook.com/field.vijit/">
+                            <i class="fab fa-facebook">
+                            </i>
+                        </a>
+                        <a href="https://github.com/Thaipat/">
+                            <i class="fab fa-github">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---- Hobby ----  -->
+    <section class="hobby">
+        <div class="header">
+            <h1>กิจกรรมที่ชอบทำ</h1>
+        </div>
+        <div class="h_row">
+            <div class="h_left">
+                <img class="sport" src="sport.jpg">
+                <img class="music" src="music.jpg">
+                <img class="game" src="game.png">
+            </div>
+            <div class="h_right">
+                <div class="text_sport">
+                    <h2>เล่นกีฬา</h2>
+                    <p>เป็นคนที่ชอบเล่นทุกกีฬา แต่ไม่เก่งซักกีฬา กีฬาที่ชอบเล่นที่สุดคือ บาสเก็ตบอล และวอลเลย์บอล</p>
+                </div>
+                <div class="text_music">
+                    <h2>เล่นดนตรี</h2>
+                    <p>เครื่องดนตรีที่ชอบเล่นจะเป็นประเภทที่ให้จังหวะ เช่น กลอง ส่วนเครื่องดนตรีอื่นที่พอเล่นได้ก็จะมีกีตาร์</p>
+                </div>
+                <div class="text_game">
+                    <h2>เล่นเกม</h2>
+                    <p>ที่ชอบมากที่สุดคือชอบเล่นเกมนี่แหละ :D ชอบเล่นเกมทุกประเภทเลย ขอแค่มีเพื่อนเล่น ที่เล่นเป็นประจำก็จะมี League of Legends และ Genshin Impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---- Performance ----  -->
+    <section class="performance">
+        <div class="header">
+            <h1>ผลงาน</h1>
+        </div>
+        <div class="pe_row">
+            <div class="pe_left">
+                <img class="itcamp" src="itcamp.png">
+                <img class="prepro" src="prepro.png">
+            </div>
+            <div class="pe_right">
+            </div>
+        </div>
+    </section>
+    <!-- ---- Footer ----  -->
+    <footer>
+        <div class="footer">test</div>
+    </footer>
+    <!-- ---- Scorlling ----  -->
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a id="home" onclick="smoothScroll(this.id)">หน้าหลัก</a></li>
+                <li><a id="profile" onclick="smoothScroll(this.id)">โปรไฟล์</a></li>
+                <li><a id="hobby" onclick="smoothScroll(this.id)">กิจกรรมที่ชอบทำ</a></li>
+                <li><a id="performance" onclick="smoothScroll(this.id)">ผลงาน</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
