@@ -404,7 +404,6 @@ footer {
     border-radius: 10px;
     border: 10px solid rgb(66 48 39);
     transition: 0.2s linear;
-    margin-left: 30%;
 }
 
 .button:hover {
