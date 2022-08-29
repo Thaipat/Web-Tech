@@ -53,7 +53,7 @@
     position: absolute;
     width: 12%;
     top: 87%;
-    left: 10%;
+    left: 13%;
     animation: bear 10s infinite linear;
 }
 
@@ -63,7 +63,7 @@
     }
 
     100% {
-        transform: translateX(1000%);
+        transform: translateX(900%);
     }
 }
 
@@ -119,14 +119,14 @@ nav {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 8px;
     position: relative;
 }
 
 .nav-links ul li a {
     color: rgb(236 211 191);
     text-decoration: none;
-    font-size: 150%;
+    font-size: 110%;
 }
 
 .nav-links ul li::after {
@@ -154,6 +154,11 @@ nav {
     font-size: 200%;
     color: rgb(206 195 181);
     padding-top: 4vh;
+}
+
+.add{
+    height: 0.5vh;
+    background-color: rgb(66 48 39);
 }
 
 /* ---- Profile ---- */
@@ -415,4 +420,50 @@ footer {
     font-size: 400%;
     transition: 0.2s linear;
     opacity: 0;
+}
+
+/* ---- Graph ---- */
+
+.graph_content{
+    min-height: 76.7vh;
+    background-color: rgb(199 168 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.graph_content h1{
+    font-size: 300%;
+    margin: 50px;
+}
+
+.col1{
+    position: absolute;
+    left: 20%;
+}
+
+.col2 div{
+    font-size: 300%;
+    margin: 50px 50px 50px 0px;
+}
+
+.col2{
+    position: absolute;
+    left: 40%;
+}
+
+.g_html{
+    background-color: red;
+    width: 10%;
+}
+
+.g_css{
+    background-color: red;
+    width: 10%;
+}
+
+.g_js{
+    background-color: red;
+    width: 10%;
 }
