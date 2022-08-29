@@ -389,7 +389,7 @@ footer {
 
 /* ---- More Function ---- */
 
-.content {
+#content {
     min-height: 77.2vh;
     background-color: rgb(199 168 138);
     display: flex;
@@ -404,9 +404,16 @@ footer {
     border-radius: 10px;
     border: 10px solid rgb(66 48 39);
     transition: 0.2s linear;
+    margin-left: 30%;
 }
 
 .button:hover {
     background-color: rgb(176, 166, 154);
     transform: scale(110%, 110%) rotateZ(-5deg);
+}
+
+#content-text{
+    font-size: 400%;
+    transition: 0.2s linear;
+    opacity: 0;
 }
