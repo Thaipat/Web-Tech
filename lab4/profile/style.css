@@ -1,11 +1,8 @@
 * {
     font-family: 'Itim', cursive;
     padding: 0;
-    margin-top: 0;
-}
-
-body {
-    background-color: rgb(223 207 192);
+    margin: 0;
+    cursor: url('./img/foo655.cur'), auto;
 }
 
 /* ---- Home ---- */
@@ -15,6 +12,7 @@ body {
     width: 100%;
     background-color: rgb(104 64 39);
     position: relative;
+    overflow: hidden;
 }
 
 .text-box {
@@ -31,6 +29,39 @@ body {
     font-size: 600%;
 }
 
+.component1{
+    position: absolute;
+    padding: 15% 10%;
+    width: 10%;
+    border-radius: 50%;
+    left: -12%;
+    top: 60%;
+    background-color: #1D1E22;
+}
+
+.component2{
+    position: absolute;
+    padding: 7% 2%;
+    width: 10%;
+    border-radius: 50%;
+    left: 13%;
+    top: 85%;
+    background-color: #1D1E22;
+}
+
+.component3{
+    position: absolute;
+    width: 12%;
+    top: 87%;
+    left: -13%;
+    animation: bear 10s infinite linear;
+}
+
+@keyframes bear{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(1000%);}
+}
+
 /* ---- Scrolling ---- */
 
 nav {
@@ -41,7 +72,7 @@ nav {
     min-width: 10%;
     border-radius: 10px;
     top: 0;
-    left: 65.3%;
+    left: 66.9%;
     padding: 0.5% 0.5% 0% 0.5%;
 }
 
@@ -62,10 +93,6 @@ nav {
     color: rgb(236 211 191);
     text-decoration: none;
     font-size: 150%;
-}
-
-.nav-links ul li a:hover {
-    cursor: pointer;
 }
 
 .nav-links ul li::after {
@@ -127,7 +154,6 @@ nav {
 }
 
 .p_left img:hover {
-    cursor: pointer;
     transform: scale(110%, 110%);
 }
 
@@ -217,7 +243,6 @@ nav {
 }
 
 .h_left img:hover {
-    cursor: pointer;
     transform: scale(110%, 110%);
 }
 
@@ -275,7 +300,6 @@ nav {
 }
 
 .itcamp:hover {
-    cursor: pointer;
     transform: scale(110%, 110%);
 }
 
@@ -291,7 +315,6 @@ nav {
 }
 
 .prepro:hover {
-    cursor: pointer;
     transform: scale(110%, 110%);
 }
 
@@ -330,3 +353,5 @@ footer {
     color: rgb(206 195 181);
     font-size: 130%;
 }
+
+/* ---- Cursor ---- */
