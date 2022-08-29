@@ -19,14 +19,14 @@
     width: 10%;
     color: rgb(236 211 191);
     position: absolute;
-    top: 50%;
-    left: 45%;
+    top: 47%;
+    left: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .text-box h1 {
-    font-size: 600%;
+    font-size: 800%;
 }
 
 .component1{
@@ -53,13 +53,43 @@
     position: absolute;
     width: 12%;
     top: 87%;
-    left: -13%;
+    left: 10%;
     animation: bear 10s infinite linear;
 }
 
 @keyframes bear{
     0%{transform: translateX(0%);}
     100%{transform: translateX(1000%);}
+}
+
+.component4{
+    position: absolute;
+    padding: 15% 10%;
+    width: 10%;
+    border-radius: 50%;
+    left: 80%;
+    top: -30%;
+    background-color: #1D1E22;
+}
+
+.component5{
+    position: absolute;
+    padding: 7% 2%;
+    width: 10%;
+    border-radius: 50%;
+    left: 93%;
+    top: 85%;
+    background-color: #1D1E22;
+}
+
+.component6{
+    position: absolute;
+    padding: 6% 1%;
+    width: 10%;
+    border-radius: 50%;
+    left: 5%;
+    top: 5%;
+    background-color: #1D1E22;
 }
 
 /* ---- Scrolling ---- */
@@ -72,7 +102,7 @@ nav {
     min-width: 10%;
     border-radius: 10px;
     top: 0;
-    left: 66.9%;
+    right: 0;
     padding: 0.5% 0.5% 0% 0.5%;
 }
 
@@ -172,6 +202,7 @@ nav {
 
 .social {
     font-size: 150%;
+    margin-top: 30px;
 }
 
 .social a {
@@ -264,7 +295,7 @@ nav {
 
 .text_game {
     position: absolute;
-    top: 85%;
+    top: 83%;
     left: 60%;
     transform: translate(-50%, -50%);
     font-size: 200%;
@@ -325,7 +356,7 @@ nav {
 
 .text_itcamp {
     position: absolute;
-    top: 35%;
+    top: 32%;
     left: 60%;
     transform: translate(-50%, -50%);
     font-size: 200%;
@@ -333,7 +364,7 @@ nav {
 
 .text_prepro {
     position: absolute;
-    top: 75%;
+    top: 73%;
     left: 60%;
     transform: translate(-50%, -50%);
     font-size: 200%;
@@ -354,4 +385,26 @@ footer {
     font-size: 130%;
 }
 
-/* ---- Cursor ---- */
+/* ---- More Function ---- */
+
+.content{
+    min-height: 77.2vh;
+    background-color: rgb(199 168 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    font-size: 300%;
+    background-color: rgb(206 195 181);
+    padding: 10px;
+    border-radius: 10px;
+    border: 10px solid rgb(66 48 39);
+    transition: 0.2s linear;
+}
+
+.button:hover{
+    background-color: rgb(176, 166, 154);
+    transform: scale(110%, 110%) rotateZ(-5deg);
+}
