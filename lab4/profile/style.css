@@ -29,7 +29,7 @@
     font-size: 800%;
 }
 
-.component1{
+.component1 {
     position: absolute;
     padding: 15% 10%;
     width: 10%;
@@ -39,7 +39,7 @@
     background-color: #1D1E22;
 }
 
-.component2{
+.component2 {
     position: absolute;
     padding: 7% 2%;
     width: 10%;
@@ -49,7 +49,7 @@
     background-color: #1D1E22;
 }
 
-.component3{
+.component3 {
     position: absolute;
     width: 12%;
     top: 87%;
@@ -57,12 +57,17 @@
     animation: bear 10s infinite linear;
 }
 
-@keyframes bear{
-    0%{transform: translateX(0%);}
-    100%{transform: translateX(1000%);}
+@keyframes bear {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(1000%);
+    }
 }
 
-.component4{
+.component4 {
     position: absolute;
     padding: 15% 10%;
     width: 10%;
@@ -72,7 +77,7 @@
     background-color: #1D1E22;
 }
 
-.component5{
+.component5 {
     position: absolute;
     padding: 7% 2%;
     width: 10%;
@@ -82,7 +87,7 @@
     background-color: #1D1E22;
 }
 
-.component6{
+.component6 {
     position: absolute;
     padding: 6% 1%;
     width: 10%;
@@ -116,7 +121,6 @@ nav {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-
 }
 
 .nav-links ul li a {
@@ -139,8 +143,6 @@ nav {
 .nav-links ul li:hover:after {
     width: 100%;
 }
-
-
 
 /* ---- Header ---- */
 
@@ -387,7 +389,7 @@ footer {
 
 /* ---- More Function ---- */
 
-.content{
+.content {
     min-height: 77.2vh;
     background-color: rgb(199 168 138);
     display: flex;
@@ -395,7 +397,7 @@ footer {
     align-items: center;
 }
 
-.button{
+.button {
     font-size: 300%;
     background-color: rgb(206 195 181);
     padding: 10px;
@@ -404,7 +406,7 @@ footer {
     transition: 0.2s linear;
 }
 
-.button:hover{
+.button:hover {
     background-color: rgb(176, 166, 154);
     transform: scale(110%, 110%) rotateZ(-5deg);
 }
