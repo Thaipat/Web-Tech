@@ -458,7 +458,7 @@ footer {
 
 .g_html{
     position: absolute;
-    height: 64.8%;
+    height: 63.6%;
     min-width: 1.5%;
     bottom: 15%;
     left: 57%;
@@ -466,7 +466,7 @@ footer {
 
 .g_css{
     position: absolute;
-    height: 23.3%;
+    height: 24%;
     min-width: 1.5%;
     bottom: 15%;
     left: 62%;
@@ -474,7 +474,7 @@ footer {
 
 .g_js{
     position: absolute;
-    height: 11.9%;
+    height: 12.4%;
     min-width: 1.5%;
     bottom: 15%;
     left: 67%;
