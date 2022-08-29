@@ -395,7 +395,7 @@ footer {
 /* ---- More Function ---- */
 
 #content {
-    min-height: 77.2vh;
+    min-height: 85vh;
     background-color: rgb(199 168 138);
     display: flex;
     justify-content: center;
