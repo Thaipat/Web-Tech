@@ -17,7 +17,20 @@ body {
     --fc: #1D1E22;
 }
 
-/* ---- Home ---- */
+/* ---------------------------------------------------- Header ---------------------------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 11vh;
+    background-color: var(--c4);
+    font-size: 200%;
+    color: var(--c5);
+    padding-top: 4vh;
+}
+
+/* ---------------------------------------------------- Home ---------------------------------------------------- */
 
 .home {
     min-height: 100vh;
@@ -41,8 +54,391 @@ body {
     font-size: 800%;
 }
 
+/* ---------------------------------------------------- Profile ---------------------------------------------------- */
 
-/* ---- Component ---- */
+.profile {
+    position: relative;
+    min-height: 85vh;
+    background-color: var(--r_bg_content);
+    overflow: hidden;
+}
+
+.p_row {
+    display: flex;
+    min-height: 85vh;
+}
+
+.p_left {
+    flex: 15%;
+    background-color: var(--l_bg_content);
+}
+
+.p_left img {
+    position: absolute;
+    width: 20%;
+    top: 21%;
+    left: 8%;
+    border: 5px solid var(--c6);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.p_left img:hover {
+    transform: scale(110%, 110%);
+}
+
+.p_right {
+    flex: 85%;
+    background-color: var(--r_bg_content);
+    color: var(--fc);
+}
+
+.infomation {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+.social {
+    font-size: 150%;
+    margin-top: 30px;
+}
+
+.social a {
+    margin: 10px;
+    color: rgb(51, 27, 12);
+    text-decoration: none;
+    transition: 0.3s linear;
+    position: absolute;
+}
+
+.social a:hover {
+    font-size: 160%;
+    color: rgb(79, 46, 24);
+}
+
+#ig {
+    bottom: -50%;
+}
+
+#fb {
+    bottom: -50%;
+    left: 15%;
+}
+
+#gh {
+    bottom: -50%;
+    left: 30%;
+}
+
+/* ---------------------------------------------------- Hobby ---------------------------------------------------- */
+
+.hobby {
+    position: relative;
+    min-height: 185vh;
+    background-color: var(--r_bg_content);
+    overflow: hidden;
+}
+
+.h_row {
+    display: flex;
+    min-height: 185vh;
+}
+
+.h_left {
+    flex: 15%;
+    background-color: var(--l_bg_content);
+}
+
+.h_right {
+    flex: 85%;
+    background-color: var(--r_bg_content);
+    color: var(--fc);
+}
+
+.sport {
+    position: absolute;
+    width: 30%;
+    top: 14%;
+    left: 2%;
+    border: 5px solid var(--c6);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.music {
+    position: absolute;
+    width: 30%;
+    top: 45%;
+    left: 2%;
+    border: 5px solid var(--c6);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.game {
+    position: absolute;
+    width: 30%;
+    top: 75%;
+    left: 2%;
+    border: 5px solid var(--c6);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.h_left img:hover {
+    transform: scale(110%, 110%);
+}
+
+.text_sport {
+    position: absolute;
+    top: 24%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+.text_music {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+.text_game {
+    position: absolute;
+    top: 83%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+/* ---------------------------------------------------- Performance ---------------------------------------------------- */
+
+.performance {
+    position: relative;
+    min-height: 145vh;
+    background-color: var(--r_bg_content);
+    overflow: hidden;
+}
+
+.pe_row {
+    display: flex;
+    min-height: 145vh;
+}
+
+.pe_left {
+    flex: 15%;
+    background-color: var(--l_bg_content);
+}
+
+.itcamp {
+    position: absolute;
+    width: 30%;
+    top: 21%;
+    left: 2%;
+    border: 5px solid var(--c6);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.itcamp:hover {
+    transform: scale(110%, 110%);
+}
+
+.prepro {
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    left: 2%;
+    border: 5px solid var(--c6);
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.prepro:hover {
+    transform: scale(110%, 110%);
+}
+
+.pe_right {
+    flex: 85%;
+    background-color: var(--r_bg_content);
+    color: var(--fc);
+}
+
+.text_itcamp {
+    position: absolute;
+    top: 32%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+.text_prepro {
+    position: absolute;
+    top: 73%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 200%;
+}
+
+
+/* ---------------------------------------------------- More Function ---------------------------------------------------- */
+
+.morefunction {
+    position: relative;
+    overflow: hidden;
+}
+
+#content {
+    min-height: 85vh;
+    background-color: var(--r_bg_content);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fc);
+}
+
+.button {
+    font-size: 300%;
+    background-color: rgb(146, 137, 127);
+    padding: 10px;
+    border-radius: 10px;
+    border: 10px solid var(--c4);
+    transition: 0.2s linear;
+}
+
+.button:hover {
+    background-color: rgb(126, 119, 110);
+    transform: scale(110%, 110%) rotateZ(-5deg);
+}
+
+#content-text {
+    font-size: 400%;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+/* ---------------------------------------------------- Graph ---------------------------------------------------- */
+
+.graph {
+    position: relative;
+    overflow: hidden;
+}
+
+.graph_content {
+    min-height: 77.6vh;
+    background-color: var(--r_bg_content);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--fc);
+}
+
+.graph_content h1 {
+    font-size: 300%;
+    margin: 50px;
+}
+
+.col1 {
+    position: absolute;
+    left: 25%;
+}
+
+.col2 div {
+    margin: 50px 50px 50px 0px;
+    border-radius: 20px;
+    background-color: rgb(146, 137, 127);
+    border: 5px solid var(--c4);
+}
+
+.col2 {
+    font-size: 300%;
+    width: 10%;
+    left: 40%;
+}
+
+.g_html {
+    position: absolute;
+    height: 47.1%;
+    min-width: 1.5%;
+    bottom: 15%;
+    left: 57%;
+}
+
+.g_css {
+    position: absolute;
+    height: 48.5%;
+    min-width: 1.5%;
+    bottom: 15%;
+    left: 62%;
+}
+
+.g_js {
+    position: absolute;
+    height: 4.4%;
+    min-width: 1.5%;
+    bottom: 15%;
+    left: 67%;
+}
+
+.i_html {
+    position: absolute;
+    bottom: 18%;
+    left: 56%;
+}
+
+.i_css {
+    position: absolute;
+    bottom: 18%;
+    left: 61.7%;
+}
+
+.i_js {
+    position: absolute;
+    bottom: 18%;
+    left: 67.3%;
+}
+
+/* ---------------------------------------------------- Cutter ---------------------------------------------------- */
+.cutter {
+    position: absolute;
+    background-color: #1D1E22;
+    width: 40%;
+    height: 8px;
+    border-radius: 20px;
+    right: 20%;
+}
+
+#cutter1 {
+    top: 40%;
+}
+
+#cutter2 {
+    bottom: 30%;
+}
+
+#cutter3 {
+    bottom: 48%;
+}
+
+#cutter4 {
+    bottom: 0%;
+    width: 90%;
+    right: 10%;
+}
+
+/* ---------------------------------------------------- Component ---------------------------------------------------- */
 
 .component1 {
     position: absolute;
@@ -162,7 +558,7 @@ body {
     background-color: var(--fc);
 }
 
-/* ---- Scrolling ---- */
+/* ---------------------------------------------------- Scrolling ---------------------------------------------------- */
 
 nav {
     position: fixed;
@@ -209,258 +605,7 @@ nav {
     width: 100%;
 }
 
-/* ---- Header ---- */
-
-.header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 11vh;
-    background-color: var(--c4);
-    font-size: 200%;
-    color: var(--c5);
-    padding-top: 4vh;
-}
-
-/* ---- Profile ---- */
-
-.profile {
-    position: relative;
-    min-height: 85vh;
-    background-color: var(--r_bg_content);
-    overflow: hidden;
-}
-
-.p_row {
-    display: flex;
-    min-height: 85vh;
-}
-
-.p_left {
-    flex: 15%;
-    background-color: var(--l_bg_content);
-}
-
-.p_left img {
-    position: absolute;
-    width: 20%;
-    top: 21%;
-    left: 8%;
-    border: 5px solid var(--c6);
-    border-radius: 10px;
-    transition: 0.3s linear;
-    box-shadow: 1px 1px 1px 1px;
-}
-
-.p_left img:hover {
-    transform: scale(110%, 110%);
-}
-
-.p_right {
-    flex: 85%;
-    background-color: var(--r_bg_content);
-    color: var(--fc);
-}
-
-.infomation {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    font-size: 200%;
-}
-
-.social {
-    font-size: 150%;
-    margin-top: 30px;
-}
-
-.social a {
-    margin: 10px;
-    color: rgb(51, 27, 12);
-    text-decoration: none;
-    transition: 0.3s linear;
-    position: absolute;
-}
-
-.social a:hover {
-    font-size: 160%;
-    color: rgb(79, 46, 24);
-}
-
-#ig {
-    bottom: -50%;
-}
-
-#fb {
-    bottom: -50%;
-    left: 15%;
-}
-
-#gh {
-    bottom: -50%;
-    left: 30%;
-}
-
-
-/* ---- Hobby ---- */
-
-.hobby {
-    position: relative;
-    min-height: 185vh;
-    background-color: var(--r_bg_content);
-    overflow: hidden;
-}
-
-.h_row {
-    display: flex;
-    min-height: 185vh;
-}
-
-.h_left {
-    flex: 15%;
-    background-color: var(--l_bg_content);
-}
-
-.h_right {
-    flex: 85%;
-    background-color: var(--r_bg_content);
-    color: var(--fc);
-}
-
-.sport {
-    position: absolute;
-    width: 30%;
-    top: 14%;
-    left: 2%;
-    border: 5px solid var(--c6);
-    border-radius: 10px;
-    transition: 0.3s linear;
-    box-shadow: 1px 1px 1px 1px;
-}
-
-.music {
-    position: absolute;
-    width: 30%;
-    top: 45%;
-    left: 2%;
-    border: 5px solid var(--c6);
-    border-radius: 10px;
-    transition: 0.3s linear;
-    box-shadow: 1px 1px 1px 1px;
-}
-
-.game {
-    position: absolute;
-    width: 30%;
-    top: 75%;
-    left: 2%;
-    border: 5px solid var(--c6);
-    border-radius: 10px;
-    transition: 0.3s linear;
-    box-shadow: 1px 1px 1px 1px;
-}
-
-.h_left img:hover {
-    transform: scale(110%, 110%);
-}
-
-.text_sport {
-    position: absolute;
-    top: 24%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    font-size: 200%;
-}
-
-.text_music {
-    position: absolute;
-    top: 55%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    font-size: 200%;
-}
-
-.text_game {
-    position: absolute;
-    top: 83%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    font-size: 200%;
-}
-
-/* ---- Performance ---- */
-
-.performance {
-    position: relative;
-    min-height: 145vh;
-    background-color: var(--r_bg_content);
-    overflow: hidden;
-}
-
-.pe_row {
-    display: flex;
-    min-height: 145vh;
-}
-
-.pe_left {
-    flex: 15%;
-    background-color: var(--l_bg_content);
-}
-
-.itcamp {
-    position: absolute;
-    width: 30%;
-    top: 21%;
-    left: 2%;
-    border: 5px solid var(--c6);
-    border-radius: 10px;
-    transition: 0.3s linear;
-    box-shadow: 1px 1px 1px 1px;
-}
-
-.itcamp:hover {
-    transform: scale(110%, 110%);
-}
-
-.prepro {
-    position: absolute;
-    width: 30%;
-    top: 60%;
-    left: 2%;
-    border: 5px solid var(--c6);
-    border-radius: 10px;
-    transition: 0.3s linear;
-    box-shadow: 1px 1px 1px 1px;
-}
-
-.prepro:hover {
-    transform: scale(110%, 110%);
-}
-
-.pe_right {
-    flex: 85%;
-    background-color: var(--r_bg_content);
-    color: var(--fc);
-}
-
-.text_itcamp {
-    position: absolute;
-    top: 32%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    font-size: 200%;
-}
-
-.text_prepro {
-    position: absolute;
-    top: 73%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    font-size: 200%;
-}
-
-/* ---- Footer ---- */
+/* ---------------------------------------------------- Footer ---------------------------------------------------- */
 
 footer {
     display: flex;
@@ -473,150 +618,4 @@ footer {
     left: 0;
     color: var(--c5);
     font-size: 130%;
-}
-
-/* ---- More Function ---- */
-
-.morefunction{
-    position: relative;
-    overflow: hidden;
-}
-
-#content {
-    min-height: 85vh;
-    background-color: var(--r_bg_content);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--fc);
-}
-
-.button {
-    font-size: 300%;
-    background-color: rgb(146, 137, 127);
-    padding: 10px;
-    border-radius: 10px;
-    border: 10px solid var(--c4);
-    transition: 0.2s linear;
-}
-
-.button:hover {
-    background-color: rgb(126, 119, 110);
-    transform: scale(110%, 110%) rotateZ(-5deg);
-}
-
-#content-text {
-    font-size: 400%;
-    transition: 0.2s linear;
-    opacity: 0;
-}
-
-/* ---- Graph ---- */
-
-.graph{
-    position: relative;
-    overflow: hidden;
-}
-
-.graph_content {
-    min-height: 77.6vh;
-    background-color: var(--r_bg_content);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: var(--fc);
-}
-
-.graph_content h1 {
-    font-size: 300%;
-    margin: 50px;
-}
-
-.col1 {
-    position: absolute;
-    left: 25%;
-}
-
-.col2 div {
-    margin: 50px 50px 50px 0px;
-    border-radius: 20px;
-    background-color: rgb(146, 137, 127);
-    border: 5px solid var(--c4);
-}
-
-.col2 {
-    font-size: 300%;
-    width: 10%;
-    left: 40%;
-}
-
-.g_html {
-    position: absolute;
-    height: 47.1%;
-    min-width: 1.5%;
-    bottom: 15%;
-    left: 57%;
-}
-
-.g_css {
-    position: absolute;
-    height: 48.5%;
-    min-width: 1.5%;
-    bottom: 15%;
-    left: 62%;
-}
-
-.g_js {
-    position: absolute;
-    height: 4.4%;
-    min-width: 1.5%;
-    bottom: 15%;
-    left: 67%;
-}
-
-.i_html {
-    position: absolute;
-    bottom: 18%;
-    left: 56%;
-}
-
-.i_css {
-    position: absolute;
-    bottom: 18%;
-    left: 61.7%;
-}
-
-.i_js {
-    position: absolute;
-    bottom: 18%;
-    left: 67.3%;
-}
-
-/* ---- Cutter ---- */
-.cutter {
-    position: absolute;
-    background-color: #1D1E22;
-    width: 40%;
-    height: 8px;
-    border-radius: 20px;
-    right: 20%;
-}
-
-#cutter1 {
-    top: 40%;
-}
-
-#cutter2 {
-    bottom: 30%;
-}
-
-#cutter3 {
-    bottom: 48%;
-}
-
-#cutter4 {
-    bottom: 0%;
-    width: 90%;
-    right: 10%;
 }
