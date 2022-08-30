@@ -5,19 +5,31 @@
     cursor: url('./img/foo655.cur'), auto;
 }
 
+body{
+    --c1:rgb(104 64 39);
+    --c2:rgb(236 211 191);
+    --c3:rgb(211 160 117);
+    --c4:rgb(66 48 39);
+    --c5:rgb(206 195 181);
+    --c6:rgb(68 50 40);
+    --r_bg_content:rgb(135, 114, 95);
+    --l_bg_content:#1D1E22;
+    --fc:#1D1E22;
+}
+
 /* ---- Home ---- */
 
 .home {
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(104 64 39);
+    background-color: var(--c1);
     position: relative;
     overflow: hidden;
 }
 
 .text-box {
     width: 10%;
-    color: rgb(236 211 191);
+    color: var(--c2);
     position: absolute;
     top: 47%;
     left: 40%;
@@ -36,7 +48,7 @@
     border-radius: 50%;
     left: -12%;
     top: 60%;
-    background-color: #1D1E22;
+    background-color: var(--fc);
 }
 
 .component2 {
@@ -46,7 +58,7 @@
     border-radius: 50%;
     left: 13%;
     top: 85%;
-    background-color: #1D1E22;
+    background-color: var(--fc);
 }
 
 .component3 {
@@ -74,7 +86,7 @@
     border-radius: 50%;
     left: 80%;
     top: -30%;
-    background-color: #1D1E22;
+    background-color: var(--fc);
 }
 
 .component5 {
@@ -84,7 +96,7 @@
     border-radius: 50%;
     left: 93%;
     top: 85%;
-    background-color: #1D1E22;
+    background-color: var(--fc);
 }
 
 .component6 {
@@ -94,7 +106,7 @@
     border-radius: 50%;
     left: 5%;
     top: 5%;
-    background-color: #1D1E22;
+    background-color: var(--fc);
 }
 
 /* ---- Scrolling ---- */
@@ -124,7 +136,7 @@ nav {
 }
 
 .nav-links ul li a {
-    color: rgb(236 211 191);
+    color: var(--c2);
     text-decoration: none;
     font-size: 110%;
 }
@@ -133,7 +145,7 @@ nav {
     content: ' ';
     width: 0%;
     height: 2px;
-    background: rgb(211 160 117);
+    background: var(--c3);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -150,15 +162,15 @@ nav {
     display: flex;
     justify-content: center;
     height: 11vh;
-    background-color: rgb(66 48 39);
+    background-color: var(--c4);
     font-size: 200%;
-    color: rgb(206 195 181);
+    color: var(--c5);
     padding-top: 4vh;
 }
 
 .add{
     height: 0.5vh;
-    background-color: rgb(66 48 39);
+    background-color: var(--c4);
 }
 
 /* ---- Profile ---- */
@@ -166,7 +178,7 @@ nav {
 .profile {
     position: relative;
     min-height: 85vh;
-    background-color: rgb(199 168 138);
+    background-color: var(--r_bg_content);
 }
 
 .p_row {
@@ -176,7 +188,7 @@ nav {
 
 .p_left {
     flex: 15%;
-    background-color: rgb(73 104 99);
+    background-color: var(--l_bg_content);
 }
 
 .p_left img {
@@ -184,7 +196,7 @@ nav {
     width: 20%;
     top: 21%;
     left: 8%;
-    border: 5px solid rgb(68 50 40);
+    border: 5px solid var(--c6);
     border-radius: 10px;
     transition: 0.3s linear;
     box-shadow: 1px 1px 1px 1px;
@@ -196,7 +208,8 @@ nav {
 
 .p_right {
     flex: 85%;
-    background-color: rgb(199 168 138);
+    background-color: var(--r_bg_content);
+    color: var(--fc);
 }
 
 .infomation {
@@ -214,7 +227,7 @@ nav {
 
 .social a {
     margin: 10px;
-    color: rgb(124 72 37);
+    color: rgb(51, 27, 12);
     text-decoration: none;
     transition: 0.3s linear;
 }
@@ -229,7 +242,7 @@ nav {
 .hobby {
     position: relative;
     min-height: 185vh;
-    background-color: rgb(199 168 138);
+    background-color: var(--r_bg_content);
 }
 
 .h_row {
@@ -239,12 +252,13 @@ nav {
 
 .h_left {
     flex: 15%;
-    background-color: rgb(73 104 99);
+    background-color: var(--l_bg_content);
 }
 
 .h_right {
     flex: 85%;
-    background-color: rgb(199 168 138);
+    background-color: var(--r_bg_content);
+    color: var(--fc);
 }
 
 .sport {
@@ -252,7 +266,7 @@ nav {
     width: 30%;
     top: 14%;
     left: 2%;
-    border: 5px solid rgb(68 50 40);
+    border: 5px solid var(--c6);
     border-radius: 10px;
     transition: 0.3s linear;
     box-shadow: 1px 1px 1px 1px;
@@ -263,7 +277,7 @@ nav {
     width: 30%;
     top: 45%;
     left: 2%;
-    border: 5px solid rgb(68 50 40);
+    border: 5px solid var(--c6);
     border-radius: 10px;
     transition: 0.3s linear;
     box-shadow: 1px 1px 1px 1px;
@@ -274,7 +288,7 @@ nav {
     width: 30%;
     top: 75%;
     left: 2%;
-    border: 5px solid rgb(68 50 40);
+    border: 5px solid var(--c6);
     border-radius: 10px;
     transition: 0.3s linear;
     box-shadow: 1px 1px 1px 1px;
@@ -313,7 +327,7 @@ nav {
 .performance {
     position: relative;
     min-height: 145vh;
-    background-color: rgb(199 168 138);
+    background-color: var(--r_bg_content);
 }
 
 .pe_row {
@@ -323,7 +337,7 @@ nav {
 
 .pe_left {
     flex: 15%;
-    background-color: rgb(73 104 99);
+    background-color: var(--l_bg_content);
 }
 
 .itcamp {
@@ -331,7 +345,7 @@ nav {
     width: 30%;
     top: 21%;
     left: 2%;
-    border: 5px solid rgb(68 50 40);
+    border: 5px solid var(--c6);
     border-radius: 10px;
     transition: 0.3s linear;
     box-shadow: 1px 1px 1px 1px;
@@ -346,7 +360,7 @@ nav {
     width: 30%;
     top: 60%;
     left: 2%;
-    border: 5px solid rgb(68 50 40);
+    border: 5px solid var(--c6);
     border-radius: 10px;
     transition: 0.3s linear;
     box-shadow: 1px 1px 1px 1px;
@@ -358,7 +372,8 @@ nav {
 
 .pe_right {
     flex: 85%;
-    background-color: rgb(199 168 138);
+    background-color: var(--r_bg_content);
+    color: var(--fc);
 }
 
 .text_itcamp {
@@ -385,10 +400,10 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 1% 1%;
-    background-color: rgb(66 48 39);
+    background-color: var(--c4);
     width: 98%;
     left: 0;
-    color: rgb(206 195 181);
+    color: var(--c5);
     font-size: 130%;
 }
 
@@ -396,23 +411,24 @@ footer {
 
 #content {
     min-height: 85vh;
-    background-color: rgb(199 168 138);
+    background-color: var(--r_bg_content);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--fc);
 }
 
 .button {
     font-size: 300%;
-    background-color: rgb(206 195 181);
+    background-color: rgb(146, 137, 127);
     padding: 10px;
     border-radius: 10px;
-    border: 10px solid rgb(66 48 39);
+    border: 10px solid var(--c4);
     transition: 0.2s linear;
 }
 
 .button:hover {
-    background-color: rgb(176, 166, 154);
+    background-color: rgb(126, 119, 110);
     transform: scale(110%, 110%) rotateZ(-5deg);
 }
 
@@ -426,11 +442,12 @@ footer {
 
 .graph_content{
     min-height: 76.7vh;
-    background-color: rgb(199 168 138);
+    background-color: var(--r_bg_content);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    color: var(--fc);
 }
 
 .graph_content h1{
@@ -446,8 +463,8 @@ footer {
 .col2 div{
     margin: 50px 50px 50px 0px;
     border-radius: 20px;
-    background-color: rgb(206 195 181);
-    border: 5px solid rgb(66 48 39);
+    background-color: rgb(146, 137, 127);
+    border: 5px solid var(--c4);
 }
 
 .col2{
@@ -458,7 +475,7 @@ footer {
 
 .g_html{
     position: absolute;
-    height: 63.6%;
+    height: 48.7%;
     min-width: 1.5%;
     bottom: 15%;
     left: 57%;
@@ -466,7 +483,7 @@ footer {
 
 .g_css{
     position: absolute;
-    height: 24%;
+    height: 46.2%;
     min-width: 1.5%;
     bottom: 15%;
     left: 62%;
@@ -474,7 +491,7 @@ footer {
 
 .g_js{
     position: absolute;
-    height: 12.4%;
+    height: 5.1%;
     min-width: 1.5%;
     bottom: 15%;
     left: 67%;
@@ -496,4 +513,26 @@ footer {
     position: absolute;
     bottom: 18%;
     left: 67.3%;
+}
+
+/* ---- Cutter ---- */
+.cutter{
+    position: absolute;
+    background-color: #1D1E22;
+    width: 50%;
+    height: 0.8%;
+    border-radius: 20px;
+    right: 10%;
+}
+
+#cutter1{
+    top: 40%;
+}
+
+#cutter2{
+    bottom: 30%;
+}
+
+#cutter3{
+    bottom: 48%;
 }
