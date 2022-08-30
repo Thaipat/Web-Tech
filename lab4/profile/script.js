@@ -14,12 +14,12 @@ function moreFunction() {
 
 function createContent(parent){
     let para = document.createElement("h1");
-    let node = document.createTextNode("กดมาทะไมเรอะ!! หืมมม??")
-    let att = document.createAttribute("id")
-    att.value = "content-text"
+    let node = document.createTextNode("กดมาทะไมเรอะ!! หืมมม??");
+    let att = document.createAttribute("id");
+    att.value = "content-text";
     para.appendChild(node);
     para.setAttributeNode(att)
     parent.appendChild(para);
     let content = document.getElementById("content-text");
-    setTimeout(function(){content.style.opacity = "1";}, 300)
+    setTimeout(function(){content.style.opacity = "1";}, 300);
 }

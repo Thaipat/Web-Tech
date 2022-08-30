@@ -5,16 +5,16 @@
     cursor: url('./img/foo655.cur'), auto;
 }
 
-body{
-    --c1:rgb(104 64 39);
-    --c2:rgb(236 211 191);
-    --c3:rgb(211 160 117);
-    --c4:rgb(66 48 39);
-    --c5:rgb(206 195 181);
-    --c6:rgb(68 50 40);
-    --r_bg_content:rgb(135, 114, 95);
-    --l_bg_content:#1D1E22;
-    --fc:#1D1E22;
+body {
+    --c1: rgb(104 64 39);
+    --c2: rgb(236 211 191);
+    --c3: rgb(211 160 117);
+    --c4: rgb(66 48 39);
+    --c5: rgb(206 195 181);
+    --c6: rgb(68 50 40);
+    --r_bg_content: rgb(135, 114, 95);
+    --l_bg_content: #1D1E22;
+    --fc: #1D1E22;
 }
 
 /* ---- Home ---- */
@@ -40,6 +40,9 @@ body{
 .text-box h1 {
     font-size: 800%;
 }
+
+
+/* ---- Component ---- */
 
 .component1 {
     position: absolute;
@@ -109,6 +112,56 @@ body{
     background-color: var(--fc);
 }
 
+.component7 {
+    position: absolute;
+    padding: 15% 10%;
+    width: 10%;
+    border-radius: 50%;
+    left: 80%;
+    bottom: -30vh;
+    background-color: var(--fc);
+}
+
+.component8 {
+    position: absolute;
+    padding: 7% 2%;
+    width: 10%;
+    border-radius: 50%;
+    left: 92%;
+    bottom: 15vh;
+    background-color: var(--fc);
+}
+
+.component9 {
+    position: absolute;
+    padding: 7% 2%;
+    width: 10%;
+    border-radius: 50%;
+    left: -10vh;
+    bottom: -12vh;
+    background-color: var(--fc);
+}
+
+.component10 {
+    position: absolute;
+    padding: 6% 1%;
+    width: 10%;
+    border-radius: 50%;
+    left: 10vh;
+    bottom: -19vh;
+    background-color: var(--fc);
+}
+
+.component11 {
+    position: absolute;
+    padding: 5% 0%;
+    width: 10%;
+    border-radius: 50%;
+    left: 10vh;
+    bottom: 50vh;
+    background-color: var(--fc);
+}
+
 /* ---- Scrolling ---- */
 
 nav {
@@ -161,16 +214,12 @@ nav {
 .header {
     display: flex;
     justify-content: center;
+    width: 100%;
     height: 11vh;
     background-color: var(--c4);
     font-size: 200%;
     color: var(--c5);
     padding-top: 4vh;
-}
-
-.add{
-    height: 0.5vh;
-    background-color: var(--c4);
 }
 
 /* ---- Profile ---- */
@@ -179,6 +228,7 @@ nav {
     position: relative;
     min-height: 85vh;
     background-color: var(--r_bg_content);
+    overflow: hidden;
 }
 
 .p_row {
@@ -230,6 +280,7 @@ nav {
     color: rgb(51, 27, 12);
     text-decoration: none;
     transition: 0.3s linear;
+    position: absolute;
 }
 
 .social a:hover {
@@ -237,12 +288,28 @@ nav {
     color: rgb(79, 46, 24);
 }
 
+#ig {
+    bottom: -50%;
+}
+
+#fb {
+    bottom: -50%;
+    left: 15%;
+}
+
+#gh {
+    bottom: -50%;
+    left: 30%;
+}
+
+
 /* ---- Hobby ---- */
 
 .hobby {
     position: relative;
     min-height: 185vh;
     background-color: var(--r_bg_content);
+    overflow: hidden;
 }
 
 .h_row {
@@ -328,6 +395,7 @@ nav {
     position: relative;
     min-height: 145vh;
     background-color: var(--r_bg_content);
+    overflow: hidden;
 }
 
 .pe_row {
@@ -409,6 +477,11 @@ footer {
 
 /* ---- More Function ---- */
 
+.morefunction{
+    position: relative;
+    overflow: hidden;
+}
+
 #content {
     min-height: 85vh;
     background-color: var(--r_bg_content);
@@ -432,7 +505,7 @@ footer {
     transform: scale(110%, 110%) rotateZ(-5deg);
 }
 
-#content-text{
+#content-text {
     font-size: 400%;
     transition: 0.2s linear;
     opacity: 0;
@@ -440,8 +513,13 @@ footer {
 
 /* ---- Graph ---- */
 
-.graph_content{
-    min-height: 76.7vh;
+.graph{
+    position: relative;
+    overflow: hidden;
+}
+
+.graph_content {
+    min-height: 77.6vh;
     background-color: var(--r_bg_content);
     display: flex;
     justify-content: center;
@@ -450,89 +528,95 @@ footer {
     color: var(--fc);
 }
 
-.graph_content h1{
+.graph_content h1 {
     font-size: 300%;
     margin: 50px;
 }
 
-.col1{
+.col1 {
     position: absolute;
     left: 25%;
 }
 
-.col2 div{
+.col2 div {
     margin: 50px 50px 50px 0px;
     border-radius: 20px;
     background-color: rgb(146, 137, 127);
     border: 5px solid var(--c4);
 }
 
-.col2{
+.col2 {
     font-size: 300%;
     width: 10%;
     left: 40%;
 }
 
-.g_html{
+.g_html {
     position: absolute;
-    height: 48.7%;
+    height: 47.6%;
     min-width: 1.5%;
     bottom: 15%;
     left: 57%;
 }
 
-.g_css{
+.g_css {
     position: absolute;
-    height: 46.2%;
+    height: 47.5%;
     min-width: 1.5%;
     bottom: 15%;
     left: 62%;
 }
 
-.g_js{
+.g_js {
     position: absolute;
-    height: 5.1%;
+    height: 4.9%;
     min-width: 1.5%;
     bottom: 15%;
     left: 67%;
 }
 
-.i_html{
+.i_html {
     position: absolute;
     bottom: 18%;
     left: 56%;
 }
 
-.i_css{
+.i_css {
     position: absolute;
     bottom: 18%;
     left: 61.7%;
 }
 
-.i_js{
+.i_js {
     position: absolute;
     bottom: 18%;
     left: 67.3%;
 }
 
 /* ---- Cutter ---- */
-.cutter{
+.cutter {
     position: absolute;
     background-color: #1D1E22;
-    width: 50%;
-    height: 0.8%;
+    width: 40%;
+    height: 8px;
     border-radius: 20px;
-    right: 10%;
+    right: 20%;
 }
 
-#cutter1{
+#cutter1 {
     top: 40%;
 }
 
-#cutter2{
+#cutter2 {
     bottom: 30%;
 }
 
-#cutter3{
+#cutter3 {
     bottom: 48%;
+}
+
+#cutter4 {
+    bottom: 0%;
+    width: 90%;
+    right: 10%;
 }
