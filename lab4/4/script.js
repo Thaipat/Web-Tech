@@ -9,7 +9,7 @@ function submitTable() {
         all.appendChild(newCol);
     }
     console.log(all);
-    setTimeout(function(){createTable()}, 50);
+    createTable();
 }
 
 function reset() {
