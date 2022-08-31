@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab4/3</title>
+    <script src="script.js"></script>
+</head>
+<style>
+    table{
+        margin-top: 4vh;
+        background-color: #eee;
+    }
+    table tr th{
+        padding: 10px;
+        border: 2px solid white;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    table tr td{
+        background-color: white;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div id="all">
+        <h1>ลงทะเบียนร่วมงาน</h1>
+        <input type="text" placeholder="รหัสนักศึกษา" style="border-color: red;" id="studentID">
+        <input type="text" placeholder="ชื่อ" style="border-color: red;" id="fName">
+        <input type="text" placeholder="นามสกุล" style="border-color: red;" id="lName">
+        <button type="button" style="border-color: blue;" onclick="register()">ลงทะเบียน</button>
+        <div style="background-color: rgb(150, 150, 150);height: 1.5px;width: 50%;margin-top: 5vh;"></div>
+        <table id="table">
+            <tr>
+                <th>ลำดับที่</th>
+                <th>รหัสนักศึกษา</th>
+                <th>ชื่อ</th>
+                <th>นามสกุล</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
