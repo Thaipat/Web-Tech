@@ -3,12 +3,9 @@ function submitTable() {
     let all = document.getElementById("table");
     for (let k = 1; k <= 8; k++) {
         let newCol = document.createElement("div");
-        let newColAtt = document.createAttribute("id");
-        newColAtt.value = "col" + k;
-        newCol.setAttributeNode(newColAtt);
+        newCol.setAttribute("id", `col${k}`)
         all.appendChild(newCol);
     }
-    console.log(all);
     createTable();
 }
 
@@ -28,15 +25,11 @@ function createTable(){
             newRow = true;
         }
         let box = document.createElement("div");
-        let boxClass = document.createAttribute("class");
-        boxClass.value = "box";
-        box.setAttributeNode(boxClass);
-        let boxID = document.createAttribute("id");
-        boxID.value = "box" + i;
-        box.setAttributeNode(boxID);
-        let col = document.getElementById("col" + j);
+        box.setAttribute("class", "box");
+        box.setAttribute("id", `box${i}`)
+        let col = document.getElementById(`col${j}`);
         col.appendChild(box);
-        let getBox = document.getElementById("box" + i);
+        let getBox = document.getElementById(`box${i}`);
         if (newRow) {
             check++;
             newRow = false
