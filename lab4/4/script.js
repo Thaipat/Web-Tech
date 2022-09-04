@@ -14,7 +14,7 @@ function submitTable() {
 
 function reset() {
     let table = document.getElementById("table");
-    table.innerHTML = ' ';
+    table.innerHTML = '';
 }
 
 function createTable(){
