@@ -9,6 +9,7 @@ request.open("GET", requestURL, true);
 request.send();
 
 function ExtractData(data) {
+    document.write(`<h1>Quiz 1</h1>`)
     for (let i = 0; i < 11; i++) {
         document.write(`${i+1} ) ${data[i].question}<br>`)
         let list = ["a", "b", "c"];
