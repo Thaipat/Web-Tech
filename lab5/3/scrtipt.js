@@ -15,7 +15,7 @@ function ExtractData(data) {
             document.write(`${data[i].latlng[j]} `);
         }
         document.write(`<br>Borders : `)
-        for (let k = 0; k < data[i].borders.length; k++){
+        for (let k = 0; k < data[i].borders.length; k++) {
             document.write(`${data[i].borders[k]} `)
         }
         document.write(`</div><div style="flex:83%"><img src="${data[i].flag}" style="width: 150px;"></div></div><br><br>`)

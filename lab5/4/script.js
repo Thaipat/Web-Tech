@@ -8,6 +8,8 @@ request.onreadystatechange = function () {
 request.open("GET", requestURL, true);
 request.send();
 
-function ExtractData(data){
-    
+function ExtractData(data) {
+    for (let i = 0; i < data.movies.showing.length; i++) {
+
+    }
 }
