@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab7/2</title>
 </head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    table {
+        border: 1px solid black;
+        text-align: center;
+        height: 100px;
+
+    }
+
+    table th,
+    td {
+        border: 1px solid black;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
 <body>
-    
+    <div>
+        <div class="head">
+            <h1>JUNE 2022</h1>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+                <?php
+                $k = 1;
+                $check = false;
+                for ($i = 0; $i < 5; $i++) {
+                    for ($j = 0; $j < 7; $j++) {
+                        if ($j == 3) {
+                            $check = true;
+                        } else if (!$check) {
+                            echo "<td></td>";
+                        }
+                        if ($check && $k <= 30) {
+                            echo "<td>$k</td>";
+                            $k++;
+                        } else if ($check) {
+                            echo "<td></td>";
+                        }
+                    }
+                    echo "</tr>";
+                }
+                ?>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
