@@ -30,11 +30,19 @@
     }
     label{
         font-weight: lighter;
+        word-wrap: break-word;
+        max-width: 30vw;
+    }
+    .card{
+        border: 2px solid black;
+        border-radius: 10px;
+        max-width: 40vw;
     }
 </style>
 
 <body>
     <?php
+    echo "<div class=\"card\">";
     if (isset($_POST['name'])) {
         if (strlen($_POST['name']) >= 5) {
             $name = $_POST['name'];
@@ -93,7 +101,7 @@
     <div><h3>Age: <label>$age</label></h3></div>
     <div><h3>Profession: <label>$profession</label></h3></div>
     <div><h3>Residential Status: <label>$resident</label></h3></div>
-    </div>";
+    </div></div>";
     ?>
 </body>
 
