@@ -34,7 +34,8 @@
         font-size: 30px;
         padding: 10px;
     }
-    .head{
+
+    .head {
         display: flex;
         justify-content: center;
     }
@@ -57,21 +58,15 @@
                     <th>Sa</th>
                 </tr>
                 <?php
-                $k = 1;
-                $check = false;
+                $k = -2;
                 for ($i = 0; $i < 5; $i++) {
                     for ($j = 0; $j < 7; $j++) {
-                        if ($j == 3) {
-                            $check = true;
-                        } else if (!$check) {
-                            echo "<td></td>";
-                        }
-                        if ($check && $k <= 30) {
+                        if ($k > 0 && $k <= 30) {
                             echo "<td>$k</td>";
-                            $k++;
-                        } else if ($check) {
+                        } else {
                             echo "<td></td>";
                         }
+                        $k++;
                     }
                     echo "</tr>";
                 }
