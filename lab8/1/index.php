@@ -40,7 +40,7 @@
             <option value="SGD">SGD</option>
             <option value="USD">USD</option>
         </select>
-        <input type="number" name="money"><br>
+        <input type="number" name="money" id="money"><br>
         <div><label>To : </label>
             <select id="to" name="to">
                 <option value="THB">THB</option>
@@ -72,6 +72,9 @@
     ?>
     <script>
         document.getElementById("ans").innerHTML = "<?php echo round($money / $from * $to, 2) ?>";
+        document.getElementById("from").value = "<?php echo $money_from ?>"
+        document.getElementById("to").value = "<?php echo $money_to ?>"
+        document.getElementById("money").value = "<?php echo $money ?>"
     </script>
 </body>
 
