@@ -74,18 +74,18 @@
             if (isset($_POST['Age'])) {
                 $age = $_POST['Age'];
             }
+            if (isset($_POST['Salary'])) {
+                $salary = $_POST['Salary'];
+            }
             if (isset($_POST['Address'])) {
                 $address = $_POST['Address'];
                 $sql = <<<EOF
                 INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
                 VALUES ($id,'$name',$age,'$address',$salary);
-        EOF;
+                EOF;
                 $ret = $db->exec($sql);
             }
-            if (isset($_POST['Salary'])) {
-                $salary = $_POST['Salary'];
-            }
-
+            
             $sql = "SELECT * from COMPANY";
 
             $ret = $db->query($sql);
