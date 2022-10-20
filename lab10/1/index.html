@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab10/1</title>
+</head>
+<style>
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+    }
+
+    .destination {
+        border: 1px solid black;
+        padding: 10px 10px;
+        width: 96.5%;
+    }
+
+    .location {
+        border: 1px solid black;
+        padding: 10px 10px;
+        width: 96.5%;
+        margin-top: 10px;
+    }
+
+    #map {
+        margin-top: 10px;
+    }
+    
+    button:hover{
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="destination">
+            <label><b>Destination: </b></label>
+            <input type="text" id="name">
+            <button type="button" onclick="fromName()">ไปยังจุดหมาย</button>
+        </div>
+        <div class="location">
+            <label><b>Latitude: </b></label>
+            <input type="number" id="latitude">
+            <label><b>Longitude: </b></label>
+            <input type="number" id="longitude">
+            <button type="button" onclick="fromLaLong()">ไปยังจุดหมาย</button>
+        </div>
+        <iframe id="map" width="100%" height="500"
+            src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+    <script>
+        function fromLaLong(){
+            document.getElementById('map').src = 'https://maps.google.com/maps?q=' + document.getElementById("latitude").value + ', ' + document.getElementById("longitude").value + '&t=&z=15&ie=UTF8&iwloc=&output=embed';
+        }
+        function fromName(){
+            document.getElementById('map').src = 'https://maps.google.com/maps?q=' + document.getElementById("name").value + '&t=&z=15&ie=UTF8&iwloc=&output=embed';
+        }
+    </script>
+</body>
+
+</html>
